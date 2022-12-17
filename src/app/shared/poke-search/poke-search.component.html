@@ -1,0 +1,12 @@
+<form>
+  <!-- * keypress função para precionar o botão
+     * key up  É um evento síncrono que é acionado quando o usuário 
+     está interagindo com os controles de entrada baseados em texto. -->
+  <input
+    type="text"
+    #input
+    (keyup)="search(input.value)"
+    placeholder="Buscar Pokemon..."
+  />
+  <img src="assets/search.svg" alt="Buscar Pokemon Pokemon" />
+</form>
